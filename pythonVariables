@@ -1,0 +1,65 @@
+'''''#Comments are green and used to explain code , they start with #
+#Python has no command for declaring variables, a variable is created the moment you first assign a value to it
+x = 5
+y = "John"
+print(x)
+print(y)
+#Variables have types
+x = 4 #x is of type int
+x = "Sally" #x is now of type str
+#casting
+#Casting is to specify the data type of a variable
+x = str(3) #x wil be string "3"
+y = int(3) #y wil be number 3
+z = float(3) #z will be number 3.0
+#How to print a type
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
+#Note " " is the same as ' ' so "x" and 'x' are the same
+#Case sensitivity
+a = 4
+A = "Sally"
+#A will not overwrite a
+#Naming variables
+#A variable name must start with a letter or an underscore
+#A variable name cannot start with a number
+#Variable names are case sensitive
+myvar = "John"
+my_var = "John"
+_myvar = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+#Illegal
+#2myvar = "John"
+#my-var = "John"
+#my var = "John"
+
+#Assign multiple values
+x,y,z = "Orange", "Banana", "Cherry"
+print (x,y,z)
+#Assign 1 value to multiple variables
+x = y = z = "Orange"
+'''
+#Random Number
+import random
+print(random.randrange(1,10))
+
+#Concatenation 
+a = "Hello"
+b = "Patricia"
+c = a + " " + b
+print (c)
+
+#String Format
+age = "36"
+txt = "My name is Patricia, I am" + " " + age
+print (txt)
+
+#Escape Characters
+#To insert characters that are illegal in a string, use an escape character, in this case\
+#text = "We're fabulous" Unicorns "from amazingland."
+text = "We're fabulous \"Unicorns\" from amazingland"
+print (text)
